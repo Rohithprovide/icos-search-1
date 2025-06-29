@@ -114,6 +114,18 @@ header {
     text-decoration-line: none !important;
 }
 
+/* Nuclear option - remove all possible underlines and borders */
+* input[type="text"], * #search-bar, * .search-bar-desktop, 
+input[type="text"]#search-bar, input#search-bar.search-bar-desktop {
+    border-bottom: 0px solid transparent !important;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    text-decoration-color: transparent !important;
+    text-decoration-style: none !important;
+    -webkit-text-decoration: none !important;
+    -moz-text-decoration: none !important;
+}
+
 .header-container .search-div .search-bar-desktop:hover,
 #search-bar.search-bar-desktop:hover {
     box-shadow: 0 2px 8px rgba(32,33,36,.28) !important;
