@@ -151,22 +151,28 @@ input {
 }
 
 .autocomplete-items {
-    border: 1px solid var(--whoogle-element-bg);
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 6px rgba(32,33,36,.28) !important;
+    background-color: #fff !important;
 }
 
 .autocomplete-items div {
-    background-color: var(--whoogle-page-bg);
-    border-bottom: 1px solid var(--whoogle-element-bg);
+    background-color: #fff !important;
+    border-bottom: 1px solid #f1f3f4 !important;
+    padding: 12px 16px !important;
+    font-size: 14px !important;
+    color: #202124 !important;
 }
 
 .autocomplete-items div:hover {
-    background-color: var(--whoogle-element-bg);
-    color: var(--whoogle-contrast-text) !important;
+    background-color: #f8f9fa !important;
+    color: #202124 !important;
 }
 
 .autocomplete-active {
-    background-color: var(--whoogle-element-bg) !important;
-    color: var(--whoogle-contrast-text) !important;
+    background-color: #f8f9fa !important;
+    color: #202124 !important;
 }
 
 .footer {
