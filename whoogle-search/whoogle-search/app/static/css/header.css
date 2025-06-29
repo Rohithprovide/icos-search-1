@@ -117,6 +117,35 @@ header {
     outline: none !important;
 }
 
+/* Remove blue line/border from autocomplete and search elements */
+.autocomplete-items {
+    border: none !important;
+    border-bottom: none !important;
+}
+
+.autocomplete-items div {
+    border-bottom: none !important;
+}
+
+/* Specifically target the blue line issue */
+div[class*="autocomplete"], 
+.autocomplete-list-autocomplete,
+.header-autocomplete div,
+.search-div div {
+    border-bottom: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Remove any blue underlines from search input and container */
+#search-bar, 
+.search-bar-desktop,
+.header-autocomplete,
+.autocomplete {
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
 .search-div {
     flex: 1;
     max-width: 700px;
