@@ -38,34 +38,18 @@ input[type="text"]:focus {
     border-bottom-color: transparent !important;
 }
 
-/* Cover any possible underlines with background */
-#search-bar::after,
-.search-bar-desktop::after {
-    content: "" !important;
-    position: absolute !important;
-    bottom: -2px !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 3px !important;
-    background: white !important;
-    z-index: 999 !important;
+/* Disable browser autocomplete styling completely */
+#search-bar,
+.search-bar-desktop {
+    -webkit-appearance: textfield !important;
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
 }
 
-/* Additional nuclear approach */
-.search-div, 
-.autocomplete,
-.header-autocomplete {
-    background: white !important;
-    position: relative !important;
-}
-
-.search-div::after {
-    content: "" !important;
-    position: absolute !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 5px !important;
-    background: white !important;
-    z-index: 1000 !important;
+/* Remove webkit autofill styling */
+#search-bar:-webkit-autofill,
+.search-bar-desktop:-webkit-autofill {
+    -webkit-box-shadow: none !important;
+    -webkit-text-fill-color: inherit !important;
+    background-color: transparent !important;
 }
