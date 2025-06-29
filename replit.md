@@ -92,6 +92,11 @@ This repository contains a Whoogle Search deployment wrapper for Replit. Whoogle
 
 ## Changelog
 - June 29, 2025. Initial setup
+- June 29, 2025. UI improvements to search results page header:
+  - Fixed logo alignment with search bar
+  - Increased search bar width from 584px to 700px
+  - Removed blue focus border from search bar
+  - Improved logo positioning with proper centering
 
 ## User Preferences
 

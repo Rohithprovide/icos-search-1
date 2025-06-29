@@ -44,12 +44,16 @@ header {
     font-smoothing: antialiased;
     flex-shrink: 0;
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
 }
 
 .search-bar-desktop {
     border-radius: 24px;
     height: 44px !important;
     width: 100%;
+    max-width: 600px;
     border: 1px solid #dfe1e5;
     padding: 0 16px;
     font-size: 16px;
@@ -62,13 +66,13 @@ header {
 }
 
 .search-bar-desktop:focus {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    border-color: #4285f4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-color: #dfe1e5;
 }
 
 .search-div {
     flex: 1;
-    max-width: 584px;
+    max-width: 700px;
     margin-right: 20px;
 }
 
