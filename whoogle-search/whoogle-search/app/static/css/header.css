@@ -9,7 +9,7 @@ header {
 .header-container {
     display: flex;
     align-items: center;
-    padding: 15px 20px 5px 20px;
+    padding: 8px 20px 15px 20px;
     gap: 25px;
     max-width: 1200px;
     margin: 0;
@@ -46,7 +46,7 @@ header {
     margin-right: 10px;
     display: flex;
     align-items: center;
-    margin-top: -5px;
+    margin-top: 0px;
 }
 
 .search-bar-desktop {
@@ -184,6 +184,7 @@ a {
     border-bottom: 1px solid #dadce0;
     overflow: hidden;
     margin-bottom: 0;
+    margin-top: 10px;
     background: #fff;
 }
 
