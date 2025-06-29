@@ -17,6 +17,9 @@ input#search-bar.search-bar-desktop {
     -ms-text-decoration: none !important;
     text-underline-offset: 0px !important;
     text-underline-position: unset !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
 }
 
 /* Remove underlines from any parent containers */
@@ -33,4 +36,36 @@ input:focus,
 input[type="text"]:focus {
     text-decoration: none !important;
     border-bottom-color: transparent !important;
+}
+
+/* Cover any possible underlines with background */
+#search-bar::after,
+.search-bar-desktop::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 3px !important;
+    background: white !important;
+    z-index: 999 !important;
+}
+
+/* Additional nuclear approach */
+.search-div, 
+.autocomplete,
+.header-autocomplete {
+    background: white !important;
+    position: relative !important;
+}
+
+.search-div::after {
+    content: "" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 5px !important;
+    background: white !important;
+    z-index: 1000 !important;
 }
