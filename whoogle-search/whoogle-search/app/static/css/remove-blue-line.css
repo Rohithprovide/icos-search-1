@@ -53,3 +53,22 @@ input[type="text"]:focus {
     -webkit-text-fill-color: inherit !important;
     background-color: transparent !important;
 }
+
+/* Target the specific autocomplete element that creates the blue line */
+div#autocomplete-list-autocomplete-list,
+#autocomplete-list-autocomplete-list,
+.autocomplete-list-autocomplete-list {
+    border: none !important;
+    border-bottom: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Also target any autocomplete items */
+.autocomplete-item,
+.autocomplete-list .autocomplete-item {
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
