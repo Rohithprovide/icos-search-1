@@ -99,6 +99,21 @@ header {
     border-bottom: 1px solid #dfe1e5 !important;
 }
 
+/* Remove any text decoration or underlines from search input */
+#search-bar, #search-bar.search-bar-desktop, input.search-bar-desktop {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    text-decoration-line: none !important;
+    text-decoration-color: transparent !important;
+}
+
+/* Override any theme-specific border-bottom styling */
+.search-bar-desktop, #search-bar.search-bar-desktop {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+}
+
 .header-container .search-div .search-bar-desktop:hover,
 #search-bar.search-bar-desktop:hover {
     box-shadow: 0 2px 8px rgba(32,33,36,.28) !important;
