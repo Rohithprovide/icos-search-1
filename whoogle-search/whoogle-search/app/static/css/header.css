@@ -40,7 +40,7 @@ header {
 .logo-div {
     letter-spacing: -1px;
     font: 20pt Futura, Arial, sans-serif;
-    height: 44px;
+    height: 100px;
     font-smoothing: antialiased;
     flex-shrink: 0;
     margin-right: 10px;
@@ -57,17 +57,19 @@ header {
     border: 1px solid #dfe1e5;
     padding: 0 16px;
     font-size: 16px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
     outline: none;
+    background-color: #fff;
 }
 
 .search-bar-desktop:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .search-bar-desktop:focus {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    border-color: #dfe1e5;
+    box-shadow: 0 2px 8px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
     outline: none;
 }
 
@@ -101,6 +103,12 @@ header {
     flex: 1;
     max-width: 700px;
     margin-right: 20px;
+}
+
+.header-autocomplete {
+    width: 100%;
+    flex: 1;
+    border-radius: 24px;
 }
 
 .search-form {
