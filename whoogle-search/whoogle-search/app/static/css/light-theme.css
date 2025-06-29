@@ -193,8 +193,7 @@ path {
 .search-bar-desktop {
     background-color: var(--whoogle-result-bg) !important;
     color: var(--whoogle-text);
-    border-bottom: none !important;
-    text-decoration: none !important;
+    border-bottom: 0px;
 }
 
 .ip-text-div, .update_available, .cb_label, .cb {
